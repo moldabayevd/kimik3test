@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e4eeec">
+  <meta name="description" content="DALA — витрина вымышленного бренда зелёного чая. Выберите сорт и соберите демо-набор на русском или казахском языке.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DALA — лист. Вода. И ничего лишнего.">
+  <meta property="og:description" content="Витрина зелёного чая на русском и казахском языках.">
+  <meta property="og:image" content="https://moldabayevd.github.io/kimik3test/assets/images/teapot/source.jpg">
+  <title>DALA — лист. Вода. И ничего лишнего.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="preload" href="./assets/fonts/golos/golos-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/onest/onest-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <noscript><style>.language-switch,.set-trigger,#catalog-open-set,#footer-credits,#open-credits{display:none!important}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#catalog" data-i18n="skip">Перейти к выбору чая</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="DALA — на главную" data-i18n-aria="home">
+      <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true"><path d="M28.5 5.5C15 5.5 7 12 7 22.5c0 5.5 4 8 8.5 8 11 0 15-13 13-25Z"/><path d="M10 29 27 8M17 22l-1-9M17 22l8-2"/></svg>
+      <span>DALA</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация" data-i18n-aria="navigation">
+      <a href="#catalog" data-i18n="nav.catalog">Выбор чая</a>
+      <a href="#brew" data-i18n="nav.brew">Как заварить</a>
+      <a href="#about" data-i18n="nav.about">О бренде</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Язык сайта" data-i18n-aria="languageLabel">
+        <button type="button" data-language="ru" aria-pressed="true">Рус</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="kk" aria-pressed="false">Қаз</button>
+      </div>
+      <button class="set-trigger" id="open-set" type="button" aria-haspopup="dialog" aria-label="Набор" data-i18n-aria="nav.set">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Zm4 0V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="set-trigger-label" data-i18n="nav.set">Набор</span>
+        <span class="set-count" id="set-count" aria-hidden="true" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="demo-label"><span class="demo-dot" aria-hidden="true"></span><span data-i18n="hero.demo">Демовитрина</span></div>
+        <h1 id="hero-title"><span data-i18n="hero.title1">Лист.</span> <span data-i18n="hero.title2">Вода.</span><span class="hero-last-line" data-i18n="hero.title3">И ничего лишнего.</span></h1>
+        <p class="hero-description" data-i18n="hero.description">Зелёный чай DALA для неспешной чашки. Три сорта, понятный вкус и ни одного сложного правила.</p>
+        <a class="button button-primary hero-cta" href="#catalog"><span data-i18n="hero.cta">Выбрать чай</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a>
+        <p class="hero-footnote" data-i18n="hero.note">Листовой чай · 50 г в пачке · Цены демонстрационные</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-teapot">
+          <picture>
+            <source srcset="./assets/images/teapot/tea.webp" type="image/webp">
+            <img src="./assets/images/teapot/source.jpg" width="1920" height="1280" alt="Зелёный чай White Monkey в стеклянном чайнике и чашке" data-i18n-alt="images.teapot" fetchpriority="high">
+          </picture>
+          <p class="hero-photo-caption" data-i18n="hero.photo">White Monkey · прозрачный настой</p>
+        </div>
+        <figure class="hero-leaves">
+          <picture>
+            <source srcset="./assets/images/leaf/tea.webp" type="image/webp">
+            <img src="./assets/images/leaf/source.jpg" width="1920" height="1280" alt="Листья зелёного чая лунцзин крупным планом" data-i18n-alt="images.leaf">
+          </picture>
+          <figcaption data-i18n="hero.leafCaption">Всё начинается с листа</figcaption>
+        </figure>
+        <div class="hero-seal" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M31 7C17 7 9 14 9 25c0 5 3 8 7 8 10 0 16-13 15-26Z"/><path d="m12 31 17-21"/></svg><span>50 <span data-i18n="hero.gram">г</span></span><small data-i18n="hero.seal">зелёного чая</small></div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-intro">
+        <h2 id="catalog-title" data-i18n="catalog.title">Найдите свой зелёный.</h2>
+        <div><p data-i18n="catalog.description">Три сорта с разным характером. Загляните в лист, выберите вкус и соберите чайный набор.</p><span class="catalog-note" data-i18n="catalog.note">Фотографии показывают реальные сорта. Магазин и цены — демо.</span></div>
+      </div>
+      <div class="product-list" id="product-list">
+        <article class="product-row"><div class="product-image"><picture><source srcset="./assets/images/leaf/tea.webp" type="image/webp"><img src="./assets/images/leaf/source.jpg" width="1920" height="1280" alt="Листья лунцзина в ткани" loading="lazy"></picture></div><div class="product-description"><h3 class="product-title">Лунцзин</h3><p class="product-kind">Листовой зелёный чай · 50 г</p></div><p class="product-taste">Мягкие ореховые ноты и тёплое, округлое послевкусие.</p><p class="product-price">3 900 ₸<span class="product-weight">50 г · пачка</span></p></article>
+        <article class="product-row"><div class="product-image"><picture><source srcset="./assets/images/brewed/tea.webp" type="image/webp"><img src="./assets/images/brewed/source.jpg" width="1920" height="1536" alt="Настой сэнтя в белой пиале" loading="lazy"></picture></div><div class="product-description"><h3 class="product-title">Сэнтя</h3><p class="product-kind">Листовой зелёный чай · 50 г</p></div><p class="product-taste">Свежие травяные ноты и лёгкая, чистая терпкость.</p><p class="product-price">3 500 ₸<span class="product-weight">50 г · пачка</span></p></article>
+        <article class="product-row"><div class="product-image"><picture><source srcset="./assets/images/teapot/tea.webp" type="image/webp"><img src="./assets/images/teapot/source.jpg" width="1920" height="1280" alt="Чай White Monkey в прозрачном чайнике и чашке" loading="lazy"></picture></div><div class="product-description"><h3 class="product-title">White Monkey</h3><p class="product-kind">Листовой зелёный чай · 50 г</p></div><p class="product-taste">Деликатный вкус, мягкая сладость и прозрачный настой.</p><p class="product-price">4 200 ₸<span class="product-weight">50 г · пачка</span></p></article>
+      </div>
+      <noscript><p class="no-script">Для выбора сорта и переключения языка включите JavaScript. Цены на сайте демонстрационные; оплата не принимается.</p></noscript>
+      <div class="catalog-bottom"><span data-i18n="catalog.end">Лист. Вода. Ваш любимый вкус.</span><button class="text-button light" id="catalog-open-set" type="button" aria-haspopup="dialog"><span data-i18n="catalog.viewSet">Посмотреть набор</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button></div>
+    </section>
+
+    <section class="brew-section" id="brew" aria-labelledby="brew-title">
+      <div class="brew-content">
+        <h2 id="brew-title" data-i18n="brew.title">Дайте листу раскрыться.</h2>
+        <p class="brew-intro" data-i18n="brew.intro">Начните с простого рецепта, а следующую чашку сделайте по своему вкусу.</p>
+        <dl class="brew-measures">
+          <div><dt data-i18n="brew.tea">Чай</dt><dd>3 <span data-i18n="hero.gram">г</span></dd></div>
+          <div><dt data-i18n="brew.water">Вода</dt><dd>250 <span data-i18n="brew.ml">мл</span></dd></div>
+          <div><dt data-i18n="brew.temperature">Температура</dt><dd>75–80 °C</dd></div>
+          <div><dt data-i18n="brew.time">Время</dt><dd>2–3 <span data-i18n="brew.minutes">мин</span></dd></div>
+        </dl>
+        <ol class="brew-steps">
+          <li><span>01</span><p data-i18n="brew.step1">Отмерьте чай и положите его в чайник.</p></li>
+          <li><span>02</span><p data-i18n="brew.step2">Залейте горячей, но не кипящей водой.</p></li>
+          <li><span>03</span><p data-i18n="brew.step3">Подождите 2–3 минуты. Попробуйте и найдите своё время.</p></li>
+        </ol>
+      </div>
+      <figure class="brew-photo">
+        <picture>
+          <source srcset="./assets/images/brewed/tea.webp" type="image/webp">
+          <img src="./assets/images/brewed/source.jpg" width="1920" height="1536" alt="Вид сверху на белую пиалу со светлым настоем сэнтя" data-i18n-alt="images.brewed" loading="lazy" decoding="async">
+        </picture>
+        <figcaption><span data-i18n="brew.caption">Сэнтя · первая заварка</span><a href="./assets/CREDITS.md" id="open-credits" aria-haspopup="dialog" data-i18n="brew.credit">О фотографии</a></figcaption>
+      </figure>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-leaf" aria-hidden="true"><svg viewBox="0 0 220 290"><path d="M184 24C82 32 24 92 24 188c0 45 27 72 63 72 81 0 121-125 97-236Z"/><path d="M45 256 173 43M105 151l-7-79M105 151l65-20"/></svg></div>
+      <p class="about-label" data-i18n="about.label">Наша идея</p>
+      <h2 id="about-title" data-i18n="about.title">Хороший чай не нужно усложнять.</h2>
+      <p class="about-description" data-i18n="about.description">Просто открыть пачку, заварить и попробовать. DALA — вымышленный бренд, созданный для этой демонстрационной витрины.</p>
+      <a class="button button-dark" href="#catalog"><span data-i18n="about.cta">Собрать набор</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-top"><a class="brand" href="#top" aria-label="DALA — на главную" data-i18n-aria="home"><svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true"><path d="M28.5 5.5C15 5.5 7 12 7 22.5c0 5.5 4 8 8.5 8 11 0 15-13 13-25Z"/><path d="M10 29 27 8M17 22l-1-9M17 22l8-2"/></svg><span>DALA</span></a><p data-i18n="footer.tagline">Ваша следующая чашка начинается здесь.</p><a class="footer-up" href="#top" data-i18n="footer.up">Наверх ↑</a></div>
+    <div class="footer-bottom"><p data-i18n="footer.demo">Это демонстрационный сайт. Заказы и оплата не выполняются.</p><div><button class="text-button" id="footer-credits" type="button" aria-haspopup="dialog" data-i18n="footer.credits">Фото и лицензии</button><a href="#catalog" data-i18n="nav.catalog">Выбор чая</a><noscript><a href="./assets/CREDITS.md">Фото и лицензии</a></noscript><a href="https://github.com/moldabayevd/kimik3test" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only" data-i18n="newTab"> (откроется в новой вкладке)</span></a></div></div>
+  </footer>
+
+  <dialog class="set-dialog" id="set-dialog" aria-labelledby="set-title" aria-describedby="set-disclaimer">
+    <div class="set-panel">
+      <div class="dialog-heading"><div><p class="dialog-kicker" data-i18n="set.kicker">Ваш чайный набор</p><h2 id="set-title" data-i18n="set.title">Вы выбрали</h2></div><button class="icon-button" id="close-set" type="button" aria-label="Закрыть набор" data-i18n-aria="close" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+      <p class="set-disclaimer" id="set-disclaimer" data-i18n="set.disclaimer">Демо-режим: настоящий заказ и оплата не выполняются.</p>
+      <div class="set-items" id="set-items"></div>
+      <div class="set-empty" id="set-empty"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M20 28h34v22a17 17 0 0 1-34 0V28Z"/><path d="M54 32h6a9 9 0 0 1 0 18h-6M14 69h45M33 8c-6 8 6 9 0 16m12-16c-6 8 6 9 0 16"/></svg><h3 data-i18n="set.emptyTitle">Здесь ждут ваши сорта</h3><p data-i18n="set.emptyDescription">Добавьте чай из каталога — соберём его в одну заявку.</p><button class="button button-primary" id="empty-browse" type="button" data-i18n="set.browse">Перейти к чаям</button></div>
+      <div class="set-summary" id="set-summary" hidden><div><span data-i18n="set.total">Итого за демо-набор</span><strong id="set-total">0 ₸</strong></div><p class="set-demo-note" data-i18n="set.priceNote">Цены условные, списывать деньги неоткуда и незачем.</p><button class="button button-primary button-wide" id="copy-order" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg><span data-i18n="set.copy">Скопировать заявку</span></button><button class="clear-button" id="clear-set" type="button" data-i18n="set.clear">Очистить набор</button><p class="copy-description" data-i18n="set.copyHint">Список скопируется на текущем языке. Его можно отправить в сообщении или сохранить.</p></div>
+    </div>
+    <p class="dialog-status" role="status" aria-live="polite" aria-atomic="true"></p>
+  </dialog>
+
+  <dialog class="copy-dialog" id="copy-dialog" aria-labelledby="copy-title">
+    <div class="dialog-heading"><h2 id="copy-title" data-i18n="copy.title">Скопируйте заявку вручную</h2><button class="icon-button" id="close-copy" type="button" aria-label="Закрыть окно" data-i18n-aria="close" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <p data-i18n="copy.description">Браузер не разрешил автоматическое копирование. Выделите текст и скопируйте его сами.</p>
+    <textarea id="copy-text" rows="12" readonly aria-label="Текст демо-заявки" data-i18n-aria="copy.label"></textarea>
+    <button class="button button-primary button-wide" id="retry-copy" type="button" data-i18n="copy.retry">Попробовать скопировать снова</button>
+    <p class="dialog-status" role="status" aria-live="polite" aria-atomic="true"></p>
+  </dialog>
+
+  <dialog class="credits-dialog" id="credits-dialog" aria-labelledby="credits-title">
+    <div class="dialog-heading"><div><p class="dialog-kicker" id="credits" data-i18n="credits.kicker">Открытые изображения</p><h2 id="credits-title" data-i18n="credits.title">Фото и лицензии</h2></div><button class="icon-button" id="close-credits" type="button" aria-label="Закрыть сведения о фото" data-i18n-aria="close" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <p data-i18n="credits.intro">Фотографии реальных чаёв используются как предметные иллюстрации. Исходники сохранены локально. Для WebP выполнены изменение размера и сжатие; в интерфейсе применяется кадрирование.</p>
+    <div class="credit-entry"><h3>Лунцзин · Dried tea leaves, Longjin</h3><p>Romain Guy · CC BY-SA 2.0</p><div><a href="https://commons.wikimedia.org/wiki/File:Dried_tea_leaves,_Longjin.jpg" target="_blank" rel="noopener noreferrer" data-i18n="credits.source">Исходник</a><a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer" data-i18n="credits.license">Лицензия</a></div></div>
+    <div class="credit-entry"><h3>Сэнтя · Uji lightly steamed sencha</h3><p>Difference engine · CC BY-SA 4.0</p><div><a href="https://commons.wikimedia.org/wiki/File:2018_Uji_lightly_steamed_sencha_-_first_infusion.jpg" target="_blank" rel="noopener noreferrer" data-i18n="credits.source">Исходник</a><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" data-i18n="credits.license">Лицензия</a></div></div>
+    <div class="credit-entry"><h3>White Monkey · White-monkey-kanne-gross</h3><p>André Helbig / soultea.de · CC BY 3.0</p><div><a href="https://commons.wikimedia.org/wiki/File:White-monkey-kanne-gross.jpg" target="_blank" rel="noopener noreferrer" data-i18n="credits.source">Исходник</a><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer" data-i18n="credits.license">Лицензия</a></div></div>
+    <p class="credits-fonts" data-i18n="credits.fonts">Шрифты Onest и Golos Text распространяются по SIL Open Font License 1.1. Их лицензии и исходники находятся в репозитории.</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

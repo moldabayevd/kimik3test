@@ -1,0 +1,19 @@
+{
+  "name": "DALA — демовитрина зелёного чая",
+  "short_name": "DALA",
+  "description": "Вымышленный чайный бренд. Демонстрационный двуязычный лендинг без реальной оплаты.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e4eeec",
+  "theme_color": "#e4eeec",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
